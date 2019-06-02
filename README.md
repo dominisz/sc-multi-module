@@ -12,3 +12,4 @@ Repozytorium zawiera kod źródłowy wielomodułowego projektu mavenowego. W sk�
 
 - wywołanie polecenia `mvn package`/`mvn install` w głównym katalogu powoduje zbudowanie wszystkich podmodułów i utworzenie artefaktów (i ewentualne zainstalowanie w lokalnym repozytorium)
 - artefakty można również budować niezależnie od siebie wywołując `mvn package`/`mvn install` w poszczególnych podkatalogach
+- w module `application` wykorzystana jest wtyczka `maven-shade-plugin`, dzięki której tworzony jest dodatkowy artefakt (`application-1.0-SNAPSHOT-shaded.jar`), który ma dołączone wszystkie zależności i może byc uruchamiany poleceniem `java -jar application-1.0-SNAPSHOT-shaded.jar`
